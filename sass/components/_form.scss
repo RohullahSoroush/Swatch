@@ -1,0 +1,169 @@
+// ################# CONTACT-SECTION-PART-1 #######################
+.contact__form{
+    width: 35vw;
+    height: 50rem;
+    background: linear-gradient(to top, rgba($color-primary-dark, .8), rgba($color-primary-light, .8));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5vw;
+    border-radius: .5rem;
+    transition: box-shadow .5s;
+
+    &:hover{
+        box-shadow: 0 .5rem 2rem rgba(#000, .25);
+    }
+}
+
+// ############### CONTACT-FORM #################
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    padding: 2rem 1rem;
+    transition: all .5s ease;
+
+    & > *:not(:last-child){
+        margin-bottom: 2rem;
+        border-radius: 10rem;
+        border: none;
+        outline: none;
+        transition: all .2s;
+        padding-left: 1.5rem;
+        color: $color-primary-dark;
+        font-size: 1.6rem;
+
+        &::placeholder{
+            font-size: 1.6rem;
+        }
+
+        &:hover{
+            border-bottom: 1px solid $color-secondary-dark;
+            
+        }
+
+        &:focus{
+            width: 100%;
+            border-radius: 1rem;
+        }
+    }
+
+    &__name{
+        width: 80%;
+        height: 4rem;
+        // margin: 0 auto;
+        outline: none;
+       
+    }
+    &__email{
+        width: 80%;
+        height: 4rem;
+    }
+    &__subject{
+        width: 80%;
+        height: 4rem;
+    }
+    &__textarea{
+        width: 80%;
+        height: 15rem;
+        border-radius: 1.5rem !important;
+        padding-top: 1rem;
+        font-family: inherit;
+    }
+}
+
+.btn{
+    &-green{
+        display: inline-block;
+        color: #21aa7c;
+        font-size: 2rem;
+        padding: 1rem 3rem;
+        background-color: white;
+        margin-bottom: -1rem;
+        // margin: 3rem;
+        margin-top: 2rem;
+        border: 2px solid white ;
+        border-radius: 10rem;
+        transition: all .5s;
+        outline: none;
+
+        &:hover{
+            color: white;
+            border: 2px solid white;
+            background-color:transparent;
+            transform: scale(1.05);
+            box-shadow: 1rem 1.5rem 3rem rgba(#000, .2);
+        }
+
+        &:focus{
+            box-shadow: none;
+            transform: scale(1.02);
+        }
+    }
+}
+
+// ############## CONTACT-FORM-PART-2 ################
+.contact__details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 25vw;
+    height: 50rem;
+    color: $color-primary-dark;
+    
+    & div h4{
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        padding-bottom: 1rem;
+    }
+
+    & div p{
+        font-size: 1.6rem; 
+    }
+}
+
+.social-acounts{
+    width: 20vw;
+}
+
+.social-acounts__container{
+    display: flex;
+    width: 100%;
+
+    & div{
+        border: 2px solid $color-primary-dark;
+        width: 5rem;
+        height: 5rem;
+        background-color: transparent;
+        position: relative;
+        margin: 1rem 1.5rem 1rem 0;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: all .3s;
+
+        &:hover{
+            background-color: $color-primary-dark;
+
+            i{
+                color: white;
+            }
+        }
+
+        & i{
+            color: $color-primary-dark;
+            font-size: 3rem;
+            padding: 1rem;
+        }
+
+        & a{
+            text-decoration: none;
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
